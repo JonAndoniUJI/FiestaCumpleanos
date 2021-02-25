@@ -7,6 +7,7 @@ namespace Oculus.Avatar
         public const string LogAvatar = "[Avatars] - ";
         public const string Tab = "    ";
 
+        [System.Diagnostics.Conditional("ENABLE_AVATAR_LOGS"),
             System.Diagnostics.Conditional("ENABLE_AVATAR_LOG_BASIC")]
         public static void Log(string logMsg)
         {
